@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;1,200&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;1,200&display=swap");
+/* actualizado 21/04 */
 :root {
   --verde: #00a149;
   --blanco: #fff;
@@ -16,13 +15,26 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-h1, h2, h3, h4, h5, h6{font-family: var(--titulos);}
-a,p,button,label{font-family: var(--parrafos);}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--titulos);
+}
+a,
+p,
+button,
+label {
+  font-family: var(--parrafos);
+}
 *,
 input::placeholder {
   font-family: var(--parrafos);
 }
-*,*::after,
+*,
+*::after,
 *::before {
   box-sizing: inherit;
 }
@@ -53,33 +65,33 @@ img {
   border-radius: 5px;
   padding: 1rem 2rem;
   text-decoration: none;
-  cursor:pointer;
-  border:none;
+  cursor: pointer;
+  border: none;
 }
-.btnSubir{
-  position:fixed;
-  background-color:var(--oscuro);
+.btnSubir {
+  position: fixed;
+  background-color: var(--oscuro);
   display: inline-block;
-  border-radius:50%;
-  z-index:100;
+  border-radius: 50%;
+  z-index: 100;
   right: 0;
   bottom: 0;
-  margin:.3rem;
+  margin: 0.3rem;
   border: none;
-  color:var(--blanco);
+  color: var(--blanco);
 }
-.btnSubir:hover{
-  background-color:var(--blanco);
-  color:var(--oscuro);
-  border:2px solid var(--oscuro);
+.btnSubir:hover {
+  background-color: var(--blanco);
+  color: var(--oscuro);
+  border: 2px solid var(--oscuro);
 }
-.btnSubir i{
+.btnSubir i {
   padding: 1rem;
   cursor: pointer;
 }
-@media (min-width:768px) {
-  .btnSubir{
-    margin:1.5rem;
+@media (min-width: 768px) {
+  .btnSubir {
+    margin: 1.5rem;
   }
 }
 .btn-verde {
@@ -87,8 +99,8 @@ img {
   background-color: var(--verde);
   margin: 2rem 0;
 }
-.btn-verde:hover{
-  transition: all .7s;
+.btn-verde:hover {
+  transition: all 0.7s;
   background-color: var(--rojo);
 }
 .btn-rojo {
@@ -100,7 +112,7 @@ img {
 }
 .btn-rojo:hover {
   background-color: var(--verde);
-  transition: all .7s;
+  transition: all 0.7s;
 }
 @media (min-width: 768px) {
   .btn {
@@ -110,9 +122,9 @@ img {
 .bordes {
   border: 3px solid #fff;
 }
-.bordes:hover{
-  color:var(--verde);
-  background-color:var(--blanco);
+.bordes:hover {
+  color: var(--verde);
+  background-color: var(--blanco);
 }
 
 @media (min-width: 768px) {
@@ -138,7 +150,7 @@ img {
   position: absolute;
   top: 0;
   right: 3rem;
-  color:var(--rojo);
+  color: var(--rojo);
   font-weight: bold;
   cursor: pointer;
 }
@@ -173,12 +185,12 @@ img {
   width: 50vw;
   min-width: 25rem;
   height: 80vh;
-  padding:1rem;
+  padding: 1rem;
   animation: desplazamiento 0.5s ease-in-out;
   z-index: 90;
 }
-@media (min-width:768px) {
-  .navegacion{
+@media (min-width: 768px) {
+  .navegacion {
     padding: 3rem 4rem;
   }
 }
@@ -188,7 +200,7 @@ img {
 .navegacion a {
   display: block;
   width: 100%;
-  width:max-content;
+  width: max-content;
   text-decoration: none;
   padding: 1.5rem;
   padding-left: 1rem;
@@ -218,7 +230,7 @@ img {
   height: 0.5rem;
   margin-bottom: 0.5em;
 }
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .hamburguesa span {
     width: 4rem;
     height: 0.5rem;
@@ -318,7 +330,7 @@ video {
     flex: unset;
   }
 }
-.productos{
+.productos {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -332,7 +344,7 @@ video {
 }
 .productos .producto {
   flex: 0 0 100%;
-  border: 1px solid #D4D2D2;
+  border: 1px solid #d4d2d2;
   padding: 2rem;
   border-radius: 3px;
 }
@@ -341,10 +353,10 @@ video {
   justify-content: space-between;
   align-items: center;
 }
-.precio p{
+.precio p {
   font-weight: bold;
 }
-.precio i{
+.precio i {
   color: var(--rojo);
   font-size: 3rem;
   cursor: pointer;
@@ -377,7 +389,7 @@ video {
   padding: 5rem;
 }
 .contenedor-banner h2 {
-  font-family:var(--titulos);
+  font-family: var(--titulos);
   color: var(--blanco);
   font-size: 3.5rem;
   text-align: center;
@@ -418,7 +430,6 @@ video {
   .contenedor-personal {
     display: flex;
     justify-content: space-between;
-
   }
   .descripcion-personal,
   .foto-personal {
@@ -528,13 +539,13 @@ video {
 .redes-pie {
   text-align: center;
 }
-.info input{
+.info input {
   width: 80%;
-  outline:none;
-  padding:1rem;
+  outline: none;
+  padding: 1rem;
 }
-.info input[type=submit]{
-  padding:.5rem 1rem;
+.info input[type="submit"] {
+  padding: 0.5rem 1rem;
 }
 .footer {
   background-color: var(--oscuro);
